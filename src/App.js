@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Home from './Home'
+import Header from './Header'
+import Footer from './Footer'
+import SearchPage from './searchPage'
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // BEM Naming Convention
+    <div className='app'>
+
+    <Router>
+        <Header/>
+
+        <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/search" element={<SearchPage/>} />
+        </Routes>
+
+        <Footer/>
+    </Router>
+    {/** Home */}
+    
+      {/** Header */}
+      
+      {/** Banner */}
+        {/** Search Date */}
+      {/** Card */}
+
+      {/** Footer */}
+
+    {/** SearchPage*/}
+      {/** Header */}
+
+      {/** ... */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
