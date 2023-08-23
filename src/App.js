@@ -14,8 +14,10 @@ function App() {
         <Header/>
 
         <Routes>
-            <Route path="/" element={<Home/>} />
+            
             <Route path="/search" element={<SearchPage/>} />
+
+            <Route path="/" element={<Home/>} />
         </Routes>
 
         <Footer/>
