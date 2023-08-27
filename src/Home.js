@@ -2,12 +2,12 @@ import React from 'react'
 import './Home.css'
 import Banner from './Banner'
 import Card from './Card'
-
+import Location from './Location'
 // ES7 snippets to do 'rcfe' shortcut command
 function Home() {
   return (
     <div className='home'>
-        
+        <Location />
         <Banner/>
 
         <div className='home__section'>

@@ -1,0 +1,37 @@
+.location{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location__partOne{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.location__icon{
+    color: rgb(89, 88, 88);
+    opacity: 0.8;
+}
+
+.location__icon > a{
+    color: rgb(89, 88, 88);
+    text-decoration: none;
+}
+
+.location__icon > a:hover{
+    color: black;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.location__icon > a > .MuiSvgIcon-root{
+    width: 100%;
+    align-items: center;
+}
+
+.location__icon > a > p{
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
